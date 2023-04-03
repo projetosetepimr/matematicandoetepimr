@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #98B8F5;
+    --color2: #7792C1;
+    --color3: #586A8E;
+    --color4: #39455B;
+    --color5: #1A1E29;
+
+    --title-font: "Mukta", sans-serif;
+    --text-font: "Rubik", sans-serif;
+    --secondary-font: "Roboto", sans-serif;
+    --materials-name-font: "Fira Code", monospace;
+
+    --header-background: #FAFAFA;
+}
+
+.header {
+    width: 100vw;
+    height: 60px;
+    background-color: var(--header-background);
+    border-bottom: 1px solid #1a1e2941;
+    padding: 20px 25px;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.06);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    margin-bottom: 3px;
+}
+
+.header ul > li {
+    padding: 1px 4px;
+    position: relative;
+}
+
+.header ul > li::after {
+    content: "";
+    position: absolute;
+    background-color: var(--color2);
+    border-radius: 5px;
+    height: 5px;
+    width: 0;
+    left: 3px;
+    bottom: -10px;
+    transition: 0.2s;
+}
+
+.header ul > li:hover:after {
+    width: 100%;
+}
+
+.header a {
+    text-decoration: none;
+    color: var(--color5);
+    font: 0.95rem var(--secondary-font);
+    font-weight: 500;
+    /* border-bottom: 4px solid var(--color2); */
+}
+
+.header i {
+    color: var(--color5);
+    font-size: 18px;
+    padding-right: 2px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    /* border-bottom: 4px solid var(--color2); */
+}
+
+.header > div#header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header > div#header-left > h1 {
+    color: var(--color5);
+    font: 1.10rem var(--title-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.header > div#header-left > h1:hover {
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.133);
+}
+
+.header > div#header-left a {
+    display: block;
+    width: 38px;
+    height: 38px;
+}
+
+.header > div#header-left img {
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+}

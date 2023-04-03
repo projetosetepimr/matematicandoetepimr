@@ -5,10 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matematicando - Início</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/home.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="header">
+        <div id="header-left">
+            <a href="{{ url_for('Homepage.home') }}">
+                <img src="{{ url_for('static', filename='img/example_logo.png') }}" alt="Matematicando Logo">
+            </a>
+            <h1>Matematicando</h1>
+        </div>
 
+        <nav>
+            <ul id="navlist">
+                <li>
+                    <i class="ri-home-4-line" onclick="redirectTo('/')"></i>
+                    <a href="{{ url_for('Homepage.home') }}">Home</a>
+                </li>
+                <li>
+                    <i class="ri-book-2-line" onclick="redirectTo('/materiais')"></i>
+                    <a href="">Materiais</a>
+                </li>
+                <li>
+                    <i class="ri-tools-fill" onclick="redirectTo('/ferramentas')"></i>
+                    <a href="">Ferramentas</a>
+                </li>
+                <li>
+                    <i class="ri-mail-line" onclick="redirectTo('/contatos')"></i>
+                    <a href="">Contatos</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -18,5 +47,11 @@
     <footer>
         
     </footer>
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url
+        }
+    </script>
 </body>
 </html>

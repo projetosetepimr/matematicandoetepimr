@@ -1,0 +1,58 @@
+@keyframes main-background-slider-desktop {
+    0% {
+        background-image: url("../img/background-slider/desktop/main_desktop_background.jpeg");
+    }
+    
+    10% {
+        background-image: url("../img/background-slider/desktop/background_desktop_2.jpeg");
+    }
+
+    20% {
+        background-image: url("../img/background-slider/desktop/background_desktop_3.jpeg");
+    }
+
+    30% {
+        background-image: url("../img/background-slider/desktop/background_desktop_4.jpeg");
+    }
+
+    40% {
+        background-image: url("../img/background-slider/desktop/background_desktop_5.jpeg");
+    }
+
+    50% {
+        background-image: url("../img/background-slider/desktop/background_desktop_6.jpeg");
+    }
+
+    60% {
+        background-image: url("../img/background-slider/desktop/background_desktop_7.jpeg");
+    }
+
+    70% {
+        background-image: url("../img/background-slider/desktop/background_desktop_8.jpeg");
+    }
+
+    80% {
+        background-image: url("../img/background-slider/desktop/background_desktop_9.jpeg");
+    }
+
+    90% {
+        background-image: url("../img/background-slider/desktop/background_desktop_10.jpeg");
+    }
+
+    100% {
+        background-image: url("../img/background-slider/desktop/main_desktop_background.jpeg");
+    }
+}
+
+section#main-background {
+    background-image: url("../img/background-slider/desktop/main_desktop_background.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 87vh;
+
+    /* overflow: hidden;
+    position: relative; */
+    animation: main-background-slider-desktop 40s infinite ease-in-out;
+}

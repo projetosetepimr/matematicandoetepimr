@@ -3,7 +3,7 @@ from .views import home_bp
 
 
 def page_not_found(e):
-    render_template("404.html"), 404
+    return render_template("404.html"), 404
 
 
 def _register_blueprints(app: Flask):

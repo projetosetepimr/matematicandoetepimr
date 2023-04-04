@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
 
 * {
@@ -24,13 +25,14 @@
     --text-font: "Rubik", sans-serif;
     --secondary-font: "Roboto", sans-serif;
     --materials-name-font: "Fira Code", monospace;
+    --citation-font: "Poppins", sans-serif;
 
     --header-background: #e7e7e7;
 }
 
 .header {
     width: 100vw;
-    height: 60px;
+    height: 57px;
     background-color: var(--header-background);
     border-bottom: 1px solid rgba(0, 0, 0, 0.324);
     padding: 20px 25px;

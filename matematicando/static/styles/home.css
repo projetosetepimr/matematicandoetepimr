@@ -44,15 +44,187 @@
     }
 }
 
+main {
+    width: 100vw;
+    height: 100%;
+}
+
 section#main-background {
     background-image: url("../img/background-slider/desktop/main_desktop_background.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 40px 50px;
     width: 100vw;
     height: 87vh;
 
-    /* overflow: hidden;
-    position: relative; */
+    border-top: 2px solid rgba(0, 0, 0, 0.141);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.296) inset;
     animation: main-background-slider-desktop 40s infinite ease-in-out;
+}
+
+section#home-start {
+    width: 55%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 255, 0.376); */
+}
+
+section#home-start div#initial {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 25vh;
+    padding: 5px;
+    margin-top: 20px;
+    /* background-color: red; */
+}
+
+section#home-start div#initial h1 {
+    font: 3.2rem var(--title-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+section#home-start div#initial > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+section#home-start div#initial > div > h1 {
+    color: var(--color1);
+    position: relative;
+    top: -23px;
+}
+
+section#home-start div#initial div > div#lines {
+    width: 23vw;
+    height: 43px;
+    margin-left: 10px;
+    position: relative;
+    top: -5px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+section#home-start div#initial div > div#lines > 
+div {
+    width: 100%;
+    height: 10px;
+    margin: 3px 0px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.383);
+}
+
+section#home-start div#initial div > div#lines > div#line1 {
+    background-color: var(--color4);
+    width: 78%;
+}
+
+section#home-start div#initial div > div#lines > div#line2 {
+    background-color: var(--color1);
+    width: 88%;
+}
+
+section#home-start div#initial div > div#lines > div#line3 {
+    background-color: var(--color2);
+}
+
+section#home-start div#phrase-box {
+    width: 100%;
+    height: 18vh;
+    padding: 20px 10px;
+    margin: 20px 0px;
+    /* background-color: coral; */
+}
+
+section#home-start div#phrase-box p {
+    color: white;
+    font-family: var(--citation-font);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+section#home-start div#phrase-box p#phrase {
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: .5s;
+
+    -webkit-text-decoration-color: transparent;
+    -moz-text-decoration-color: transparent;
+}
+
+section#home-start div#phrase-box p#phrase:hover {
+    text-decoration-color: white;
+    cursor: pointer;
+}
+
+section#home-start div#phrase-box p#author {
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+section#home-start div#explore {
+    width: 100%;
+    height: 20vh;
+    /* background-color: chartreuse; */
+
+    display: flex;
+    align-items: center;
+}
+
+section#home-start div#explore div#button {
+    width: 22vw;
+    height: 10vh;
+    border-radius: 15px;
+    background-color: var(--color5);
+    border: 1px solid rgba(255, 255, 255, 0.275);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+section#home-start div#explore div#button:hover {
+    background-color: #1e2330;
+    transform: scale(103%);
+    transition: transform .3s;
+}
+
+section#home-start div#explore div#button p, i {
+    color: white;
+    cursor: pointer;
+}
+
+section#home-start div#explore div#button p {
+    font: 1.4rem var(--title-font);
+    font-weight: 600;
+}
+
+section#home-start div#explore div#button i {
+    font-size: 1.7rem;
+}
+
+section#home-start div#phrase-box p {
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.535);
+}
+
+section#home-start div#explore div#button {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.622);
+}
+
+section#home-start div#initial h1 {
+    text-shadow: 0px 0px 50px black;
 }

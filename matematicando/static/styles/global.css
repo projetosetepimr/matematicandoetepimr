@@ -29,7 +29,8 @@
 
     --header-background: #e7e7e7;
     --body-color: #EDEDED;
-    --default-index-color: #858484;
+    --default-index-color: rgba(255, 255, 255, 0.733);
+    --activated-index-color: rgba(255, 255, 255, 0.689);
 }
 
 body {

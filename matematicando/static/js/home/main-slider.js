@@ -1,32 +1,72 @@
-let imageOutput = document.getElementById("image-output")
-let slideIndices = document.querySelectorAll("div.index")
-let baseDir = "/static/img/main-slider/desktop/"
-let currentIndex = 0
-let maxIndex = 29 // maxIndex = 30
+let slider = document.getElementById("image-output")
+let slideList = document.getElementById("slide-wrap")
+let indicesList = document.querySelectorAll("div.index")
+let baseDir = "/static/img/main-slider"
+let sliderWidth = slider.offsetWidth
+let specificDir = ""
+let imageMax = 32
+let images = []
+let count = 1
 
-let defaultIndexColor = "#858484"
-let activatedIndexColor = "#b7b7b7"
+function setup() {
+    if (window.innerWidth > 1100)
+        specificDir = `${baseDir}/desktop`
+    else
+        specificDir = `${baseDir}/mobile`
 
-// console.log(image_output, slide_indices)
+    Array.prototype.slice.call(document.querySelectorAll('ul#slide-wrap > li')).forEach(
+        function(item) {
+            item.remove()
+    })
 
-function slide() {
-    imageOutput.style.backgroundImage = `url('${baseDir}${currentIndex+1}.jpg')`
-    slideIndices[currentIndex].style.backgroundColor = activatedIndexColor
-    //console.log(currentIndex)
-
-    if (currentIndex > 0) {
-        slideIndices[currentIndex-1].style.backgroundColor = defaultIndexColor
-    } else {
-        slideIndices[maxIndex].style.backgroundColor = defaultIndexColor
-    }
-
-    if (currentIndex < maxIndex) {
-        currentIndex++
-    } else {
-        currentIndex = 0 
+    for (let i=0; i<32; i++) {
+        let li = document.createElement("li")
+        let img = document.createElement("img")
+        img.src = `${specificDir}/${i+1}.jpg`
+        img.alt = `${i+1} Image`
+        img.width = sliderWidth
+        images[i] = img
+        li.appendChild(img)
+        slideList.appendChild(li)
     }
 }
 
-slideIndices[0].style.backgroundColor = activatedIndexColor
-setInterval(slide, 3000)
+let slide = function() {
+    let updateIndex = function() {
+        let index = count-1
+        if (index > 0 && index < imageMax) {
+            indicesList[index].classList.add("active")
+            indicesList[index-1].classList.remove("active")
+        } else {
+            indicesList[0].classList.add("active")
+            try {
+                throw indicesList[imageMax-1].classList.remove("active")
+            } catch (e) {
+                // console.log(e)
+            }
+        }
+    }
 
+    let nextSlide = function() {
+        if (count < imageMax) {
+            slideList.style.left = "-" + count * sliderWidth + "px"
+            count++
+        } else if (count == imageMax) {
+            slideList.style.left = "0px"
+            count = 1
+        }
+        updateIndex(count)
+    }
+
+    setInterval(nextSlide, 3000)
+}
+
+indicesList[0].classList.add("active")
+setup()
+window.addEventListener("resize", function() {
+    sliderWidth = slider.offsetWidth
+    setup()
+})
+window.onload = function() {
+    slide()
+}

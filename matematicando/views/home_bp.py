@@ -3,7 +3,7 @@ from flask import Blueprint, render_template
 
 home_bp = Blueprint("Homepage", __name__)
 
-NUMBER_OF_IMAGES = 30
+NUMBER_OF_IMAGES = 32
 
 
 @home_bp.route("/")

@@ -11,6 +11,7 @@
     
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/example_logo.png')}}" type="image/x-icon">
     <script src="{{ url_for('static', filename='js/home/main-slider.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/home/smooth-scroll.js') }}" defer></script>
 </head>
 <body>
     <header class="header">
@@ -64,7 +65,7 @@
                     <p id="author">̶ African Proverbs</p>
                 </div>
                 <div id="explore">
-                    <div id="button">
+                    <div id="explore-button">
                         <p>Explorar</p>
                         <i class="ri-arrow-right-line"></i>
                     </div>
@@ -83,16 +84,38 @@
                 {% endfor %}
             </div>
         </section>
+
+        <section id="information">
+            <h1>O que é este site?</h1>
+            <p>Este website busca integrar e facilitar a distribuição de conteúdos diversos dentro da ETEPIMR (ETE Pastor Isaac Martins Rodrigues) relacionados as vertentes de exatas, incluindo Matemática, Física e Química. Além disso, a ideia principal também envolve o incremento de ferramentas para facilitar o aprendizado e/ou resolução de exercícios quaisquer.</p>
+
+            <h1>Qual a motivação para a criação deste site?</h1>
+            <p>A principal motivação está centrada na atual maneira de entrega de conteúdo no que tange a área de exatas. Normalmente, esses conteúdos são disponibilizados de forma não organizada e centralizada. Sendo assim, o objetivo aqui é fornecer um ambiente onde o aluno possa encontrar tais conteúdos com as características citadas acima, ou seja, um ambiente organizado e centralizado para a distribuição de materiais de estudos.</p>
+
+            <h1>Quais tipos de materiais você encontrará aqui?</h1>
+            <p>Em primeira instância, este website abrigará conteúdos disponibilizados pelos professores de cada área (Matemática, Física e Química), então espere encontrar revisões, atividades, resumos, materiais de apoio, etc. Esses estarão em diferentes formatos, como: PDF, apresentações (slides), documentos (docs) e planilhas.</p>
+                
+            <p>Ademais, como citado anteriormente, este website também integrará ferramentas de propósito geral para auxiliar o aluno no momento de estudo.Apesar disso, trazendo uma abordagem sob uma óptica mais ampla, uma das metas futuras seria incrementar um mecanismo de posts e vídeos exclusivos a este site. Por exemplo, um professor decide realizar uma correção de exercício, assim, o mesmo poderia disponilizá-la aqui neste site em formato de vídeo.</p>
+        </section>
+
+        <section id="ete-slider">
+            <h1></h1>
+            <div></div>
+        </section>
     </main>
 
-    <footer>
-        
+    <footer class="footer">
+        <p>Matematicando, ETEPIMR - 2023</p>
     </footer>
 
     <script>
         function redirectTo(url) {
             window.location.href = url
         }
+
+        // document.getElementById("button").addEventListener("click", () => {
+        //     window.location.href = "/#information"
+        // })
     </script>
 </body>
 </html>

@@ -45,31 +45,36 @@
 }
 
 main {
-    width: 100vw;
+    width: 100%;
     height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-section#main-background {
+.main section#main-background {
     background-image: url("../img/background-slider/desktop/main_desktop_background.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 40px 50px;
-    width: 100vw;
+    width: 100%;
     height: 87vh;
 
     border-top: 2px solid rgba(0, 0, 0, 0.141);
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.296) inset;
-    animation: main-background-slider-desktop 40s infinite ease-in-out;
+   /* animation: main-background-slider-desktop 40s infinite ease-in-out; */
 }
 
-section#home-start {
+.main section#home-start {
     width: 55%;
     height: 100%;
     /* background-color: rgba(0, 0, 255, 0.376); */
 }
 
-section#home-start div#initial {
+.main section#home-start div#initial {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -79,7 +84,7 @@ section#home-start div#initial {
     /* background-color: red; */
 }
 
-section#home-start div#initial h1 {
+.main section#home-start div#initial h1 {
     font: 3.2rem var(--title-font);
     font-weight: 700;
     text-transform: uppercase;
@@ -88,19 +93,19 @@ section#home-start div#initial h1 {
     cursor: pointer;
 }
 
-section#home-start div#initial > div {
+.main section#home-start div#initial > div {
     width: 100%;
     height: 100%;
     display: flex;
 }
 
-section#home-start div#initial > div > h1 {
+.main section#home-start div#initial > div > h1 {
     color: var(--color1);
     position: relative;
     top: -23px;
 }
 
-section#home-start div#initial div > div#lines {
+.main section#home-start div#initial div > div#lines {
     width: 23vw;
     height: 43px;
     margin-left: 10px;
@@ -111,7 +116,7 @@ section#home-start div#initial div > div#lines {
     flex-direction: column;
 }
 
-section#home-start div#initial div > div#lines > 
+.main section#home-start div#initial div > div#lines > 
 div {
     width: 100%;
     height: 10px;
@@ -120,21 +125,21 @@ div {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.383);
 }
 
-section#home-start div#initial div > div#lines > div#line1 {
+.main section#home-start div#initial div > div#lines > div#line1 {
     background-color: var(--color4);
     width: 78%;
 }
 
-section#home-start div#initial div > div#lines > div#line2 {
+.main section#home-start div#initial div > div#lines > div#line2 {
     background-color: var(--color1);
     width: 88%;
 }
 
-section#home-start div#initial div > div#lines > div#line3 {
+.main section#home-start div#initial div > div#lines > div#line3 {
     background-color: var(--color2);
 }
 
-section#home-start div#phrase-box {
+.main section#home-start div#phrase-box {
     width: 100%;
     height: 18vh;
     padding: 20px 10px;
@@ -142,14 +147,14 @@ section#home-start div#phrase-box {
     /* background-color: coral; */
 }
 
-section#home-start div#phrase-box p {
+.main section#home-start div#phrase-box p {
     color: white;
     font-family: var(--citation-font);
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-section#home-start div#phrase-box p#phrase {
+.main section#home-start div#phrase-box p#phrase {
     font-size: 0.9rem;
     font-weight: 500;
 
@@ -161,12 +166,12 @@ section#home-start div#phrase-box p#phrase {
     -moz-text-decoration-color: transparent;
 }
 
-section#home-start div#phrase-box p#phrase:hover {
+.main section#home-start div#phrase-box p#phrase:hover {
     text-decoration-color: white;
     cursor: pointer;
 }
 
-section#home-start div#phrase-box p#author {
+.main section#home-start div#phrase-box p#author {
     text-transform: capitalize;
     font-size: 0.8rem;
     font-weight: 400;
@@ -174,7 +179,7 @@ section#home-start div#phrase-box p#author {
     margin-left: 20px;
 }
 
-section#home-start div#explore {
+.main section#home-start div#explore {
     width: 100%;
     height: 20vh;
     /* background-color: chartreuse; */
@@ -183,7 +188,7 @@ section#home-start div#explore {
     align-items: center;
 }
 
-section#home-start div#explore div#button {
+.main section#home-start div#explore div#button {
     width: 22vw;
     height: 10vh;
     border-radius: 15px;
@@ -197,34 +202,80 @@ section#home-start div#explore div#button {
     gap: 15px;
 }
 
-section#home-start div#explore div#button:hover {
+.main section#home-start div#explore div#button:hover {
     background-color: #1e2330;
     transform: scale(103%);
     transition: transform .3s;
 }
 
-section#home-start div#explore div#button p, i {
+.main section#home-start div#explore div#button p, i {
     color: white;
     cursor: pointer;
 }
 
-section#home-start div#explore div#button p {
+.main section#home-start div#explore div#button p {
     font: 1.4rem var(--title-font);
     font-weight: 600;
 }
 
-section#home-start div#explore div#button i {
+.main section#home-start div#explore div#button i {
     font-size: 1.7rem;
 }
 
-section#home-start div#phrase-box p {
+.main section#home-start div#phrase-box p {
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.535);
 }
 
-section#home-start div#explore div#button {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.622);
+.main section#home-start div#explore div#button {
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.622);
 }
 
-section#home-start div#initial h1 {
-    text-shadow: 0px 0px 50px black;
+.main section#home-start div#initial h1 {
+    text-shadow: 0px 0px 30px black;
 }
+
+
+
+.main section#slider {
+    width: 80vw;
+    height: 100vh;
+    background-color: var(--color5);
+    transform: translateY(-20px);
+    border-radius: 10px;
+    box-shadow: 0px 34px 33px 3px rgba(0,0,0,0.14);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main section#slider div#image-output {
+    width: 95%;
+    height: 80%;
+    border-radius: 10px;
+    background: var(--color5) url("../img/main-slider/desktop/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main section#slider div#indices {
+    width: 100%;
+    height: 5%;
+    /* background-color: red; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.main section#slider div#indices > div.index {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--default-index-color);
+}
+

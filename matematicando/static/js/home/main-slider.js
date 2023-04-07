@@ -8,6 +8,7 @@ let imageMax = 32
 let images = []
 let count = 1
 
+
 function setup() {
     if (window.innerWidth > 1100)
         specificDir = `${baseDir}/desktop`
@@ -19,7 +20,7 @@ function setup() {
             item.remove()
     })
 
-    for (let i=0; i<32; i++) {
+    for (let i=0; i<imageMax; i++) {
         let li = document.createElement("li")
         let img = document.createElement("img")
         img.src = `${specificDir}/${i+1}.jpg`
@@ -58,7 +59,7 @@ let slide = function() {
         updateIndex(count)
     }
 
-    setInterval(nextSlide, 3000)
+    setInterval(nextSlide, 5000)
 }
 
 indicesList[0].classList.add("active")

@@ -1,5 +1,7 @@
 # Matematicando - ETEPIMR
 
+- This app is hosted by **[Railway.app](https://railway.app/)**
+
 ## TODO
 
 - [x] Initial Config

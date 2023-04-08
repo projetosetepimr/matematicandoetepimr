@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematicando - Contatos</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/contacts.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/example_logo.png')}}" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div id="header-left">
+            <a href="{{ url_for('Homepage.home') }}">
+                <img src="{{ url_for('static', filename='img/example_logo.png') }}" alt="Matematicando Logo">
+            </a>
+            <h1>Matematicando</h1>
+        </div>
+
+        <nav>
+            <ul id="navlist">
+                <li>
+                    <i class="ri-home-4-line" onclick="redirectTo('/')"></i>
+                    <a href="{{ url_for('Homepage.home') }}">Home</a>
+                </li>
+                <li>
+                    <i class="ri-book-2-line" onclick="redirectTo('/materiais')"></i>
+                    <a href="">Materiais</a>
+                </li>
+                <li>
+                    <i class="ri-tools-fill" onclick="redirectTo('/ferramentas')"></i>
+                    <a href="">Ferramentas</a>
+                </li>
+                <li>
+                    <i class="ri-mail-line" onclick="redirectTo('/contatos')"></i>
+                    <a href="{{ url_for('Contacts.contacts') }}">Contatos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h1>Contate-nos</h1>
+        <section id="contacts-box">
+            <div id="text">
+                <p>Caso você deseje entrar em contato conosco para expressar um feedback sobre este site, ou até mesmo 
+                apontar pontos de melhoria, seja bem-vindo. Nós, o Matematicando ETEPIMR, aceitamos a sua opinião. 
+                Por fim, você poderá utilizar alguma das opções abaixo para realizar contato:</p>
+            </div>
+            <div id="contacts-list">
+              <div class="contact" onclick="copyContactToClipboard('{{ email }}', 'Email')">
+                    <i class="ri-mail-send-line"></i>
+                    <p>Email</p>
+                </div>
+                <div class="contact">
+                    <p>......</p>
+                </div>
+                <div class="contact">
+                    <p>....</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Matematicando, ETEPIMR - 2023</p>
+    </footer>
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url
+        }
+
+        function copyContactToClipboard(contact, contactName) {
+            navigator.clipboard.writeText(contact)
+            window.alert(`${contactName} copiado para a área de transferência!\nContato: ${contact}`)
+        }
+    </script>
+</body>
+</html>
+

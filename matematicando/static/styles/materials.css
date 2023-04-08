@@ -1,0 +1,283 @@
+.main {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main section#main-background {
+    background-color: red;
+    background-image: url("../img/main-background-materials/1.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10rem;
+    width: 100%;
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    border-top: 2px solid rgba(0, 0, 0, 0.141);
+    box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 0.159) inset;
+}
+
+.main section#main-background div#heading {
+    width: 55vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main section#main-background div#heading h1 {
+    font: 3.7rem var(--title-font);
+    text-shadow: 10px 10px 30px rgba(0, 0, 0, 0.746);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+
+.main section#main-background div#heading div#heading-line {
+    background-color: var(--color1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.43);
+    border-radius: 10px;
+    width: 100%;
+    height: 8px;
+}
+
+.main section#image-grid {
+    background-color: var(--color5);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.205);
+    border-radius: 10px;
+    padding: 10px;
+    width: 90vw;
+    height: 80vh;
+
+    transform: translateY(-100px);
+    border: 1px solid #ededed50;
+}
+
+.main section#matters {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.main section#matters div.matter-name {
+    background-color: var(--color5);
+    border-bottom: 8px solid var(--color1);
+    margin-top: 80px;
+    width: 100%;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.main section#matters div.matter-name h1 {
+    font: 2.5rem var(--title-font);
+    color: white;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.main section#matters div.matter-name div.line {
+    background-color: var(--color1);
+    width: 100%;
+    height: 5px;
+}
+
+.main section#matters div.matter-block {
+    background-color: #121827;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.161);
+    border-radius: 15px;
+    padding: 20px;
+    width: 90vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.main section#matters div.matter-block#math {
+    border-top: 10px solid #EB0404;
+}
+
+.main section#matters div.matter-block#physics {
+    border-top: 10px solid #7CBB5E;
+}
+
+.main section#matters div.matter-block#chemistry {
+    border-top: 10px solid #E8834A;
+}
+
+.main section#matters div.matter-block div.matter-description {
+    background-color: #1F2738;
+    padding: 40px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main section#matters div.matter-block div.matter-description p {
+    font: 1.4rem var(--text-font);
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.main section#matters div.matter-block div.links-to-years {
+    width: 100%;
+    height: 280px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main section#matters div.matter-block div.links-to-years > div.year-block {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #1F2738;
+}
+
+.main section#matters div.matter-block div.links-to-years > div.year-block:hover {
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.33);
+    background-color: #20293a;
+    transform: translateY(-10px);
+    cursor: pointer;
+    transition: all .8s;
+}
+
+.main section#matters div.matter-block div.links-to-years > div.year-block > div.intern-header {
+    background-color: #242E43;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.041);
+    border-radius: 10px;
+    width: 100%;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main section#matters div.matter-block div.links-to-years > div.year-block > div.intern-header h1 {
+    font: 2rem var(--secondary-font);
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.main section#matters div.matter-block div.links-to-years > div.year-block > div.icon {
+    width: 100%;
+    height: calc(280px - 55px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main section#matters div.matter-block div.links-to-years > div.year-block > div.icon i {
+    font-size: 10rem;
+}
+
+.main section#matters div.matter-block div.links-to-years > div.year-block > div.icon i#first-year {
+    color: var(--first-year);
+}
+
+.main section#matters div.matter-block div.links-to-years > div.year-block > div.icon i#second-year {
+    color: var(--second-year);
+}
+
+.main section#matters div.matter-block div.links-to-years > div.year-block > div.icon i#third-year {
+    color: var(--third-year);
+}
+
+.main section#extra-content {
+    background-color: #101623;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.175);
+    margin-top: 100px;
+    width: 100%;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main section#extra-content div#line {
+    background-color: var(--color3);
+    margin-bottom: 25px;
+    width: 100%;
+    height: 30px;
+}
+
+.main section#extra-content div#content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.main section#extra-content div#right {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main section#extra-content div#right p {
+    font: 1.2rem var(--text-font);
+    letter-spacing: 2px;
+    line-height: 25px;
+    text-align: center;
+    margin: 10px 0px;
+    font-weight: 500;
+    color: white;
+}
+
+.main section#extra-content div#content img {
+    animation: infiniteUpDown 5s infinite ease;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+@keyframes infiniteUpDown {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from .views import home_bp, contacts_bp
+from .views import home_bp, contacts_bp, materials_bp
 
 
 def page_not_found(e):
@@ -9,6 +9,7 @@ def page_not_found(e):
 def _register_blueprints(app: Flask):
     app.register_blueprint(home_bp.home_bp, url_prefix="/")
     app.register_blueprint(contacts_bp.contacts_bp, url_prefix="/contatos")
+    app.register_blueprint(materials_bp.materials_bp, url_prefix="/materiais")
 
 
 def create_app():

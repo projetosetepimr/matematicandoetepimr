@@ -34,6 +34,10 @@
     --default-index-color: rgba(255, 255, 255, 0.733);
     --activated-index-color: rgba(255, 255, 255, 0.689);
     --link-color: #5dabc3;
+
+    --first-year: #3570DF;
+    --second-year: #3494CA;
+    --third-year: #35C8A5;
 }
 
 body {

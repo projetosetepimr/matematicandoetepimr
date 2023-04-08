@@ -36,7 +36,9 @@
 
 .main section#contacts-box div#text p {
     font: 1.25rem var(--text-font);
-    color: white;
+    color: rgba(255, 255, 255, 0.963);
+    letter-spacing: 1px;
+    line-height: 25px;
     text-align: center;
 }
 

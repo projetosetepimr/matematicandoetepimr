@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematicando - Materiais</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/materials.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/example_logo.png')}}" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div id="header-left">
+            <a href="{{ url_for('Homepage.home') }}">
+                <img src="{{ url_for('static', filename='img/example_logo.png') }}" alt="Matematicando Logo">
+            </a>
+            <h1>Matematicando</h1>
+        </div>
+
+        <nav>
+            <ul id="navlist">
+                <li>
+                    <i class="ri-home-4-line" onclick="redirectTo('/')"></i>
+                    <a href="{{ url_for('Homepage.home') }}">Home</a>
+                </li>
+                <li>
+                    <i class="ri-book-2-line" onclick="redirectTo('/materiais')"></i>
+                    <a href="{{ url_for('Materials.materials') }}">Materiais</a>
+                </li>
+                <li>
+                    <i class="ri-tools-fill" onclick="redirectTo('/ferramentas')"></i>
+                    <a href="{{ url_for('Materials.materials') }}">Ferramentas</a>
+                </li>
+                <li>
+                    <i class="ri-mail-line" onclick="redirectTo('/contatos')"></i>
+                    <a href="{{ url_for('Contacts.contacts') }}">Contatos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="main-background">
+            <div id="heading">
+                <h1>Área de Materiais</h1>
+                <div id="heading-line"></div>
+            </div>
+        </section>
+
+        <section id="image-grid">
+
+        </section>
+
+        <section id="matters">
+            <div class="matter-name">
+                <div class="line"></div>
+                <h1>Matemática</h1>
+                <div class="line"></div>
+            </div>
+
+            <div class="matter-block" id="math">
+                <div class="matter-description">
+                    <p>”Matemática é a área do conhecimento que envolve o estudo da aritmética, álgebra, geometria, 
+                    trigonometria, estatística e cálculo, em busca da sistematização de quantidades, medidas, espaços, 
+                    estruturas e variações. A palavra matemática é originada do grego μ?θημα (mathema), que, em 
+                    tradução livre, significa “aquilo que pode ser aprendido”.”</p>
+                </div>
+
+                <div class="links-to-years">
+                    <div class="year-block">
+                        <div class="intern-header">
+                            <h1>1° Ano</h1>
+                        </div>
+                        <div class="icon"><i id="first-year" class="ri-shape-fill"></i></div>
+                    </div>
+                    <div class="year-block">
+                        <div class="intern-header">
+                            <h1>2° Ano</h1>
+                        </div>
+                        <div class="icon"><i id="second-year" class="ri-shape-line"></i></div>
+                    </div>
+                    <div class="year-block">
+                        <div class="intern-header">
+                            <h1>3° Ano</h1>
+                        </div>
+                        <div class="icon"><i id="third-year" class="ri-shape-fill"></i></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="matter-name">
+                <div class="line"></div>
+                <h1>Física</h1>
+                <div class="line"></div>
+            </div>
+
+            <div class="matter-block" id="physics">
+                <div class="matter-description">
+                    <p>"Física é uma ciência natural que estuda as propriedades da matéria e da energia, estabelecendo 
+                    relações entre elas. Baseia-se em experimentações, observações e formulações matemáticas voltadas à 
+                    interpretação de questões fundamentais da natureza, relativas a um grande número de fenômenos, 
+                    compreendidos desde escalas subatômicas até macrocósmicas."</p>
+                </div>
+
+                <div class="links-to-years">
+                    <div class="year-block">
+                        <div class="intern-header">
+                            <h1>1° Ano</h1>
+                        </div>
+                        <div class="icon"><i id="first-year" class="ri-compasses-line"></i></div>
+                    </div>
+                    <div class="year-block">
+                        <div class="intern-header">
+                            <h1>2° Ano</h1>
+                        </div>
+                        <div class="icon"><i id="second-year" class="ri-compasses-2-line"></i></div>
+                    </div>
+                    <div class="year-block">
+                        <div class="intern-header">
+                            <h1>3° Ano</h1>
+                        </div>
+                        <div class="icon"><i id="third-year" class="ri-compasses-2-fill"></i></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="matter-name">
+                <div class="line"></div>
+                <h1>Química</h1>
+                <div class="line"></div>
+            </div>
+
+            <div class="matter-block" id="chemistry">
+                <div class="matter-description">
+                    <p>”Química é a ciência que estuda a matéria, sua estrutura, formação e as transformações que ela
+                    sofre, levando em consideração a energia envolvida em todo o processo. A Química faz parte das 
+                    Ciências da Natureza e se concentra em observar fenômenos, criar teorias para explicá-los e modelos 
+                    que os representem.”</p>
+                </div>
+
+                <div class="links-to-years">
+                    <div class="year-block">
+                        <div class="intern-header">
+                            <h1>1° Ano</h1>
+                        </div>
+                        <div class="icon"><i id="first-year" class="ri-medicine-bottle-line"></i></div>
+                    </div>
+                    <div class="year-block">
+                        <div class="intern-header">
+                            <h1>2° Ano</h1>
+                        </div>
+                        <div class="icon"><i id="second-year" class="ri-ink-bottle-line"></i></div>
+                    </div>
+                    <div class="year-block">
+                        <div class="intern-header">
+                            <h1>3° Ano</h1>
+                        </div>
+                        <div class="icon"><i id="third-year" class="ri-ink-bottle-fill"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="extra-content">
+            <div id="content">
+                <img src="../static/img/main-background-materials/triad.png" alt="Science Triad">
+                <div id="right">
+                    <p>Esta é a seção de materiais/conteúdos que serão publicados pelos respectivos professores de cada 
+                    matéria e série. Para acessar os materiais específicos, não há nenhum mistério, bastando apenas 
+                    clicar na combinação certa de matéria e série que você deseja visualizar.</p>
+                    <p>Portanto, nós esperamos que este site seja útil para você de alguma maneira. Nas páginas específicas
+                    de cada matéria e série há um bloco esclarecendo como você conseguirá identificar qual o ”tipo” de 
+                    conteúdo que o professor publicou, seja esse uma atividade, material de apoio, material de 
+                    revisão, entre outros relacionados. :)</p>
+                </div>
+            </div>
+            <div id="line"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Matematicando, ETEPIMR - 2023</p>
+    </footer>
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url
+        }
+    </script>
+</body>
+</html>

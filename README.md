@@ -12,6 +12,7 @@
   - [x] Information Section
   - [x] ETEPIMR Slider
   - [x] Footer
+  - [x] Refactoring
 - [ ] Contacts Page
 - [ ] Materials Page
 - [ ] Tools Page

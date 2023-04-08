@@ -44,7 +44,7 @@
     }
 }
 
-main {
+.main {
     width: 100%;
     height: 100%;
 
@@ -68,13 +68,13 @@ main {
    /* animation: main-background-slider-desktop 40s infinite ease-in-out; */
 }
 
-.main section#home-start {
+.main section#main-apresentation {
     width: 55%;
     height: 100%;
     /* background-color: rgba(0, 0, 255, 0.376); */
 }
 
-.main section#home-start div#initial {
+.main section#main-apresentation div#heading {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -83,7 +83,7 @@ main {
     /* background-color: red; */
 }
 
-.main section#home-start div#initial h1 {
+.main section#main-apresentation div#heading h1 {
     font: 3.2rem var(--title-font);
     font-weight: 700;
     text-transform: uppercase;
@@ -92,19 +92,19 @@ main {
     cursor: pointer;
 }
 
-.main section#home-start div#initial > div {
+.main section#main-apresentation div#heading > div {
     width: 100%;
     height: 100%;
     display: flex;
 }
 
-.main section#home-start div#initial > div > h1 {
+.main section#main-apresentation div#heading > div > h1 {
     color: var(--color1);
     position: relative;
     top: -23px;
 }
 
-.main section#home-start div#initial div > div#lines {
+.main section#main-apresentation div#heading div > div#lines {
     width: 23vw;
     height: 43px;
     margin-left: 10px;
@@ -115,7 +115,7 @@ main {
     flex-direction: column;
 }
 
-.main section#home-start div#initial div > div#lines > 
+.main section#main-apresentation div#heading div > div#lines > 
 div {
     width: 100%;
     height: 10px;
@@ -124,21 +124,21 @@ div {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.383);
 }
 
-.main section#home-start div#initial div > div#lines > div#line1 {
+.main section#main-apresentation div#heading div > div#lines > div#line1 {
     background-color: var(--color4);
     width: 78%;
 }
 
-.main section#home-start div#initial div > div#lines > div#line2 {
+.main section#main-apresentation div#heading div > div#lines > div#line2 {
     background-color: var(--color1);
     width: 88%;
 }
 
-.main section#home-start div#initial div > div#lines > div#line3 {
+.main section#main-apresentation div#heading div > div#lines > div#line3 {
     background-color: var(--color2);
 }
 
-.main section#home-start div#phrase-box {
+.main section#main-apresentation div#phrase-box {
     width: 100%;
     height: 18vh;
     padding: 20px 10px;
@@ -146,14 +146,14 @@ div {
     /* background-color: coral; */
 }
 
-.main section#home-start div#phrase-box p {
+.main section#main-apresentation div#phrase-box p {
     color: white;
     font-family: var(--citation-font);
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-.main section#home-start div#phrase-box p#phrase {
+.main section#main-apresentation div#phrase-box p#phrase {
     font-size: 0.9rem;
     font-weight: 500;
 
@@ -165,12 +165,12 @@ div {
     -moz-text-decoration-color: transparent;
 }
 
-.main section#home-start div#phrase-box p#phrase:hover {
+.main section#main-apresentation div#phrase-box p#phrase:hover {
     text-decoration-color: white;
     cursor: pointer;
 }
 
-.main section#home-start div#phrase-box p#author {
+.main section#main-apresentation div#phrase-box p#author {
     text-transform: capitalize;
     font-size: 0.8rem;
     font-weight: 400;
@@ -178,7 +178,7 @@ div {
     margin-left: 20px;
 }
 
-.main section#home-start div#explore {
+.main section#main-apresentation div#explore-box {
     width: 100%;
     height: 20vh;
     /* background-color: chartreuse; */
@@ -187,7 +187,7 @@ div {
     align-items: center;
 }
 
-.main section#home-start div#explore div#explore-button {
+.main section#main-apresentation div#explore-box div#explore-button {
     width: 22vw;
     height: 10vh;
     border-radius: 15px;
@@ -201,41 +201,41 @@ div {
     gap: 15px;
 }
 
-.main section#home-start div#explore div#explore-button:hover {
+.main section#main-apresentation div#explore-box div#explore-button:hover {
     background-color: #1e2330;
     transform: scale(103%);
     transition: transform .3s;
 }
 
-.main section#home-start div#explore div#explore-button p, i {
+.main section#main-apresentation div#explore-box div#explore-button p, i {
     color: white;
     cursor: pointer;
 }
 
-.main section#home-start div#explore div#explore-button p {
+.main section#main-apresentation div#explore-box div#explore-button p {
     font: 1.4rem var(--title-font);
     font-weight: 600;
 }
 
-.main section#home-start div#explore div#explore-button i {
+.main section#main-apresentation div#explore-box div#explore-button i {
     font-size: 1.7rem;
 }
 
-.main section#home-start div#phrase-box p {
+.main section#main-apresentation div#phrase-box p {
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.535);
 }
 
-.main section#home-start div#explore div#explore-button {
+.main section#main-apresentation div#explore div#explore-button {
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.622);
 }
 
-.main section#home-start div#initial h1 {
+.main section#main-apresentation div#heading h1 {
     text-shadow: 0px 0px 30px black;
 }
 
 
 
-.main section#slider {
+.main section#main-slider {
     width: 85vw;
     height: 100vh;
     background-color: var(--color5);
@@ -250,7 +250,7 @@ div {
     gap: 20px;
 }
 
-.main section#slider div#image-output {
+.main section#main-slider div#image-output {
     width: 95%;
     height: 85%; 
     border-radius: 10px;
@@ -258,7 +258,7 @@ div {
     overflow: hidden;
 }
 
-.main section#slider div#image-output ul {
+.main section#main-slider div#image-output ul {
     position: relative;
     display: flex;
     list-style: none;
@@ -270,17 +270,17 @@ div {
     left: 0;
 }
 
-.main section#slider div#image-output ul > li {
+.main section#main-slider div#image-output ul > li {
     position: relative;
     height: 100%;
     float: left;
 }
 
-.main section#slider div#image-output ul > li img {
+.main section#main-slider div#image-output ul > li img {
     height: 100%;
 }
 
-.main section#slider div#indices {
+.main section#main-slider div#indices {
     width: 100%;
     height: 5%;
     /* background-color: red; */
@@ -291,7 +291,7 @@ div {
     gap: 12px;
 }
 
-.main section#slider div#indices > div.index {
+.main section#main-slider div#indices > div.index {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -299,7 +299,7 @@ div {
     cursor: pointer;
 }
 
-.main section#slider div#indices > div.active {
+.main section#main-slider div#indices > div.active {
     border: 2px solid var(--activated-index-color);
     background-color: var(--activated-index-color);
     transition: all .9s;
@@ -307,21 +307,21 @@ div {
 
 
 
-.main section#information {
+.main section#project-info {
     width: 92vw;
     padding: 10px;
     margin-top: 50px;
     /* background-color: blue; */
 }
 
-.main section#information h1 {
+.main section#project-info h1 {
     font: 2rem var(--title-font);
     margin: 18px 0px;
     letter-spacing: 3px;
     font-weight: 700;
 }
 
-.main section#information p {
+.main section#project-info p {
     font: 1.2rem var(--text-font);
     letter-spacing: 2px;
     margin: 0px 22px;
@@ -329,14 +329,14 @@ div {
     text-indent: 30px;
 }
 
-.main div#division {
+.main div#division-line {
     background-color: var(--color5);
     margin-top: 40px;
     width: 100%;
     height: 50px;
 }
 
-.main section#ete-slider {
+.main section#ete-slider-box {
     width: 100%;
     margin-top: 60px;
     background-color: var(--color5);
@@ -348,23 +348,23 @@ div {
     align-items: center;
 }
 
-.main section#ete-slider h1 {
+.main section#ete-slider-box h1 {
     font: 2rem var(--title-font);
     font-weight: 700;
     color: white;
     letter-spacing: 3px;
 }
 
-.main section#ete-slider div#line {
+.main section#ete-slider-box div#color-output-line {
     background-color: rgb(151, 212, 105);
-    transition: all 1s;
+    transition: all 2s;
     border-radius: 10px;
     margin-top: 10px;
     width: 40%;
     height: 5px;
 }
 
-.main section#ete-slider div#slide-group {
+.main section#ete-slider-box div#slide-group {
     width: 90vw;
     height: 75vh;
     margin-top: 30px;
@@ -375,7 +375,7 @@ div {
     gap: 30px;
 }
 
-.main section#ete-slider div#slider {
+.main section#ete-slider-box div#ete-slider {
     margin-top: 50px;
     border-radius: 10px;
     background-color: black;
@@ -396,13 +396,13 @@ div {
     justify-content: flex-end;
 }
 
-.main section#ete-slider div#slider > div#shadow {
+.main section#ete-slider-box div#ete-slider > div#inner-shadow {
     background-image: linear-gradient(rgba(0, 0, 0, 0), #000000);
     width: 100%;
     height: 150px;
 }
 
-.main section#ete-slider div#slide-group div.arrow {
+.main section#ete-slider-box div#slide-group div.arrow {
     box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.172);
     background-color: #101018;
     border-radius: 50%;
@@ -416,17 +416,17 @@ div {
     justify-content: center;
 }
 
-.main section#ete-slider div#slide-group div.arrow:hover {
+.main section#ete-slider-box div#slide-group div.arrow:hover {
     background-color: #11141c;
     transform: scale(1.2);
     transition: all .5s;
 }
 
-.main section#ete-slider div#slide-group div.arrow > i {
+.main section#ete-slider-box div#slide-group div.arrow > i {
     font-size: 2.5rem;
 }
 
-.main section#ete-slider p#index-output {
+.main section#ete-slider-box p#index-output {
     font: 0.9rem var(--materials-name-font);
     font-weight: 500;
     margin-top: 3rem;
@@ -438,7 +438,7 @@ div {
     background-color: #12151d;
 }
 
-.main section#ete-slider p#share-pictures {
+.main section#ete-slider-box p#share-pictures-with-us {
     /* align-self: flex-start; */
     font: 0.9rem var(--text-font);
     color: white;
@@ -452,36 +452,28 @@ div {
     align-items: center;
 }
 
-.main section#ete-slider p#share-pictures > i {
+.main section#ete-slider-box p#share-pictures-with-us > i {
     margin-right: 12px;
     font-size: 1.6rem;
     color: rgb(207, 109, 74);
 }
 
-.main section#ete-slider p#share-pictures > a {
+.main section#ete-slider-box p#share-pictures-with-us > a {
     font-weight: 500;
     margin-left: 5px;
     text-decoration: none;
     color: var(--link-color);
 }
 
-.main section#ete-slider p#share-pictures > a:hover {
+.main section#ete-slider-box p#share-pictures-with-us > a:hover {
     text-decoration: underline;
 }
 
-.main section#ete-slider div.image-fade {
-    animation: imageFade 1.5s ease;
+.main section#ete-slider-box div.image-fade {
+    animation: imageFade 3s ease;
 }
 
 @keyframes imageFade {
     0% {opacity: 0;}
     100% {opacity: 1;}
-}
-
-.main section#ete-slider div#dark-background {
-    width: 100%;
-    height: 50vh;
-    background-color: antiquewhite;
-    position: relative;
-    top: -25rem;
 }

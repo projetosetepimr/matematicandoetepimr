@@ -1,32 +1,31 @@
-let slider = document.getElementById("image-output")
-let slideList = document.getElementById("slide-wrap")
-let indicesList = document.querySelectorAll("div.index")
-let baseDir = "/static/img/main-slider"
+const slider = document.getElementById("image-output")
+const slideList = document.getElementById("slide-wrap")
+const indicesList = document.querySelectorAll("div.index")
+const baseDir = "/static/img/main-slider"
+const breakpointWidth = 1100
+const maxCount = 32
+
 let sliderWidth = slider.offsetWidth
-let specificDir = ""
-let imageMax = 32
-let images = []
 let count = 1
 
-
 function setup() {
-    if (window.innerWidth > 1100)
-        specificDir = `${baseDir}/desktop`
+    if (window.innerWidth > breakpointWidth)
+        var finalDir = `${baseDir}/desktop`
     else
-        specificDir = `${baseDir}/mobile`
+        var finalDir = `${baseDir}/mobile`
 
-    Array.prototype.slice.call(document.querySelectorAll('ul#slide-wrap > li')).forEach(
+    Array.prototype.slice.call(
+        document.querySelectorAll('ul#slide-wrap > li')).forEach(
         function(item) {
             item.remove()
     })
 
-    for (let i=0; i<imageMax; i++) {
+    for (let i=0; i<maxCount; i++) {
         let li = document.createElement("li")
         let img = document.createElement("img")
-        img.src = `${specificDir}/${i+1}.jpg`
+        img.src = `${finalDir}/${i+1}.jpg`
         img.alt = `${i+1} Image`
         img.width = sliderWidth
-        images[i] = img
         li.appendChild(img)
         slideList.appendChild(li)
     }
@@ -34,14 +33,14 @@ function setup() {
 
 let slide = function() {
     let updateIndex = function() {
-        let index = count-1
-        if (index > 0 && index < imageMax) {
+        let index = count - 1
+        if (index > 0 && index < maxCount) {
             indicesList[index].classList.add("active")
             indicesList[index-1].classList.remove("active")
         } else {
             indicesList[0].classList.add("active")
             try {
-                throw indicesList[imageMax-1].classList.remove("active")
+                throw indicesList[maxCount-1].classList.remove("active")
             } catch (e) {
                 // console.log(e)
             }
@@ -49,14 +48,14 @@ let slide = function() {
     }
 
     let nextSlide = function() {
-        if (count < imageMax) {
+        if (count < maxCount) {
             slideList.style.left = "-" + count * sliderWidth + "px"
             count++
-        } else if (count == imageMax) {
+        } else if (count == maxCount) {
             slideList.style.left = "0px"
             count = 1
         }
-        updateIndex(count)
+        updateIndex()
     }
 
     setInterval(nextSlide, 5000)
@@ -64,7 +63,7 @@ let slide = function() {
 
 indicesList[0].classList.add("active")
 setup()
-window.addEventListener("resize", function() {
+window.addEventListener("resize", () => {
     sliderWidth = slider.offsetWidth
     setup()
 })

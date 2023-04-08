@@ -1,7 +1,5 @@
 const exploreButton = document.getElementById("explore-button")
-const scrollTo = (document.getElementById("information").offsetTop)
-
-exploreButton.addEventListener("click", scrollToId)
+const scrollTo = document.getElementById("project-info").offsetTop
 
 function smoothScrollTo(endX, endY, duration) {
   const startX = window.scrollX || window.pageXOffset
@@ -28,7 +26,7 @@ function smoothScrollTo(endX, endY, duration) {
   }, 1000 / 60)
 }
 
-function scrollToId() {
-	// console.log(scrollTo)
-	smoothScrollTo(0, scrollTo-140, 800)
-}
+
+exploreButton.addEventListener("click", () => {
+  smoothScrollTo(0, scrollTo-100, 900)
+})

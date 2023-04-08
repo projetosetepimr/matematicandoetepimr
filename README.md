@@ -13,6 +13,9 @@
   - [x] ETEPIMR Slider
   - [x] Footer
   - [x] Refactoring
-- [ ] Contacts Page
-- [ ] Materials Page
+- [x] Contacts Page
+- [x] Materials Page
+  - [x] Materials Level 1
+  - [ ] Materials Level 2
+  - [ ] Materials Logic
 - [ ] Tools Page

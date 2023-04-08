@@ -4,9 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found Error - 404</title>
+    <title>404 Page Not Found</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/global.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/example_logo.png') }}" type="image/x-icon">
+
+    <style>
+        body {
+            background-color: white;
+        }
+
+        section#page-not-found {
+            width: 95vw;
+            height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        section#page-not-found h1 {
+            font: 3rem var(--title-font);
+            color: var(--color5);
+            font-weight: 700;
+        }
+
+        section#page-not-found h2 {
+            font: 2rem var(--title-font);
+            margin-bottom: 25px;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+
+        section#page-not-found a > h2 {
+            color: var(--color5);
+        }
+
+        section#page-not-found a > h2:hover {
+            text-decoration: underline;
+        }
+
+        section#page-not-found a {
+            font: 1rem var(--materials-name-font);
+            color: rgba(19, 70, 180, 0.657);
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-decoration: none;
+        }
+
+        section#page-not-found a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Page Not Found</h1>
+    <section id="page-not-found">
+        <h1>Page Not Found</h1>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status" target="_blank">
+            <h2>404 Status Code</h2>
+        </a>
+        <p><a href="{{ url_for('Homepage.home') }}">Voltar para o início</a></p>
+    </section>
 </body>
 </html>

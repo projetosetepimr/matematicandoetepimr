@@ -1,0 +1,148 @@
+.main {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main section#main-background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-top: 2px solid rgba(0, 0, 0, 0.141);
+    box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 0.159) inset;
+}
+
+.main section#main-background.math {
+    background-image: url("../img/main-background-materials/materials-lv2/math-background.jpg");
+}
+
+.main section#main-background.physics {
+    background-image: url("../img/main-background-materials/materials-lv2/physics-background.jpg");
+}
+
+.main section#main-background.chemistry {
+    background-image: url("../img/main-background-materials/materials-lv2/chemistry-background.jpg");
+}
+
+.main section#main-background h1 {
+    font: 2.5rem var(--title-font);
+    color: white;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.main section#main-background div#line {
+    border-radius: 10px;
+    width: 30%;
+    height: 6px;
+}
+
+.main section#main-background div#line.first-year {
+    background-color: var(--first-year);
+}
+
+.main section#main-background div#line.second-year {
+    background-color: var(--second-year);
+}
+
+.main section#main-background div#line.third-year {
+    background-color: var(--third-year);
+}
+
+.main section#help-section {
+    background-color: var(--color5);
+    border-radius: 10px;
+    transform: translateY(-70px);
+    border: 1px solid #ededed50;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.205);
+    margin-bottom: 5rem;
+    padding: 40px 20px;
+    width: 85vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main section#help-section div.content-type {
+    background-color: #12151c;
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    gap: 20px;
+}
+
+.main section#help-section div.content-type div.content-type-color {
+    background-color: red;
+    border-radius: 10px;
+    width: 250px;
+    height: 100%;
+}
+
+.main section#help-section div.content-type div.content-name {
+   width: 100%;
+   height: 100%;
+   margin-right: 20px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.main section#help-section div.content-type div.content-type-color#homework {
+    background-color: var(--homework);
+}
+.main section#help-section div.content-type div.content-type-color#review {
+    background-color: var(--review);
+}
+
+.main section#help-section div.content-type div.content-type-color#supporting-materials {
+    background-color: var(--supporting-materials);
+} 
+
+.main section#help-section div.content-type div.content-type-color.other {
+    background-color: var(--other);
+}
+
+.main section#help-section div.content-type div.content-name > p {
+    font: 1.3rem var(--secondary-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: white;
+}
+
+.main > h1 {
+    font: 2.5rem var(--title-font);
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--color5);
+    font-weight: 700;
+}
+
+.main > div.content-block {
+    background-color: #0d0f15;
+    margin-bottom: 10rem;
+    border-radius: 10px;
+    width: 70vw;
+    height: 70vh;
+
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.157);
+}

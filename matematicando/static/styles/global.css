@@ -38,6 +38,11 @@
     --first-year: #3570DF;
     --second-year: #3494CA;
     --third-year: #35C8A5;
+
+    --homework: #F05944;
+    --supporting-materials: #5A84D4;
+    --review: #AE4FCF;
+    --other: #BCDA66;
 }
 
 body {

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematicando - Materiais</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/materials-l2.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/example_logo.png')}}" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div id="header-left">
+            <a href="{{ url_for('Homepage.home') }}">
+                <img src="{{ url_for('static', filename='img/example_logo.png') }}" alt="Matematicando Logo">
+            </a>
+            <h1>Matematicando</h1>
+        </div>
+
+        <nav>
+            <ul id="navlist">
+                <li>
+                    <i class="ri-home-4-line" onclick="redirectTo('/')"></i>
+                    <a href="{{ url_for('Homepage.home') }}">Home</a>
+                </li>
+                <li>
+                    <i class="ri-book-2-line" onclick="redirectTo('/materiais')"></i>
+                    <a href="{{ url_for('Materials.materials') }}">Materiais</a>
+                </li>
+                <li>
+                    <i class="ri-tools-fill" onclick="redirectTo('/ferramentas')"></i>
+                    <a href="{{ url_for('Materials.materials') }}">Ferramentas</a>
+                </li>
+                <li>
+                    <i class="ri-mail-line" onclick="redirectTo('/contatos')"></i>
+                    <a href="{{ url_for('Contacts.contacts') }}">Contatos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="main-background" class="{{ subject_background }}">
+            <h1>{{ subject_name }} - {{ grade_name }}</h1>
+            <div id="line" class="{{ grade_line_color }}"></div>
+        </section>
+
+        <section id="help-section">
+            <div class="content-type">
+                <div class="content-type-color" id="homework"></div>
+                <div class="content-name">
+                    <p>Atividade ou ficha de exercício</p>
+                </div>
+            </div>
+            <div class="content-type">
+                <div class="content-type-color" id="supporting-materials"></div>
+                <div class="content-name">
+                    <p>MATERIAL de apoio</p>
+                </div>
+            </div>
+            <div class="content-type">
+                <div class="content-type-color" id="review"></div>
+                <div class="content-name">
+                    <p>REvisão</p>
+                </div>
+            </div>
+            <div class="content-type">
+                <div class="content-type-color other"></div>
+                <div class="content-name">
+                    <p>Outros</p>
+                </div>
+            </div>
+        </section>
+
+        <h1>I Unidade</h1>
+        <div class="content-block"></div>
+
+        <h1>II Unidade</h1>
+        <div class="content-block"></div>
+
+        <h1>III Unidade</h1>
+        <div class="content-block"></div>
+
+        <h1>IV Unidade</h1>
+        <div class="content-block"></div>
+    </main>
+
+    <footer class="footer">
+        <p>Matematicando, ETEPIMR - 2023</p>
+    </footer>
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url
+        }
+    </script>
+</body>
+</html>

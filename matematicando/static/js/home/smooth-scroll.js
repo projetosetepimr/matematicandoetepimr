@@ -28,5 +28,5 @@ function smoothScrollTo(endX, endY, duration) {
 
 
 exploreButton.addEventListener("click", () => {
-  smoothScrollTo(0, scrollTo-100, 900)
+  smoothScrollTo(0, scrollTo, 900)
 })

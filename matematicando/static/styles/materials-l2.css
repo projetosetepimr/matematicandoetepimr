@@ -138,11 +138,131 @@
 }
 
 .main > div.content-block {
-    background-color: #0d0f15;
+    background-color: #131720;
     margin-bottom: 10rem;
     border-radius: 10px;
+    padding: 15px;
     width: 70vw;
-    height: 70vh;
 
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.157);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main > div.content-block div.content {
+    background-color: #0b0b10;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.main > div.content-block div.content:hover {
+    transform: translateY(-3px);
+    transition: all .5s;
+}
+
+.main > div.content-block div.content div.content-type-icon-background {
+    background-color: #000000;
+    border-radius: 10px;
+    width: 80px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main > div.content-block div.content div.content-type-icon-background > img {
+    width: 40px;
+    height: 40px;
+}
+
+.main div.content-block div.content div.content-name {
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.main > div.content-block div.content div.content-name > p {
+    font: 1.1rem var(--materials-name-font);
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.main > div.content-block div.content div.content-name > p:hover {
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+.main > div.content-block div.content > div.download-and-content-color {
+    width: 100px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.main > div.content-block div.content > div.download-and-content-color > div.content-type-color {
+    border-radius: 10px;
+    width: 50px;
+    height: 100%;
+}
+
+.main > div.content-block div.content > 
+div.download-and-content-color > div.content-type-color#review {
+    background-color: var(--review);
+}
+
+.main > div.content-block div.content > 
+div.download-and-content-color > div.content-type-color#supporting-materials {
+    background-color: var(--supporting-materials);
+}
+
+.main > div.content-block div.content > 
+div.download-and-content-color > div.content-type-color#homework {
+    background-color: var(--homework);
+}
+
+.main > div.content-block div.content > 
+div.download-and-content-color > div.content-type-color#other {
+    background-color: var(--other);
+}
+
+.main > div.content-block div.content > div.download-and-content-color div.download-background {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.26);
+    border: 2px solid rgba(227, 226, 226, 0.171);
+    background-color: #13131d;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    height: 70%;
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.main > div.content-block div.content > 
+div.download-and-content-color div.download-background:hover {
+    background-color: #191925;
+    transition: all .5s;
+}
+
+.main > div.content-block div.content > 
+div.download-and-content-color div.download-background > i {
+    font-size: 1.5rem;
+    color: rgb(227, 226, 226);
 }

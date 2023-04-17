@@ -92,6 +92,10 @@ body {
     width: 100%;
 }
 
+.header ul > li.active:after {
+    width: 100%;
+}
+
 .header a {
     text-decoration: none;
     color: var(--color5);

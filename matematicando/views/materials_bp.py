@@ -23,7 +23,7 @@ def materials(subject=None, grade=None):
             abort(400, ":)")
 
         return render_template(
-            "materials-l2.html",
+            "materials-lv2.html",
             subject_name=SUBJECTS_MAPPER[subject][0],
             grade_name=GRADES_MAPPER[grade][0],
             subject_background=SUBJECTS_MAPPER[subject][1],

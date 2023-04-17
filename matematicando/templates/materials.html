@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/global.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/materials.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="shortcut icon" href="{{ url_for('static', filename='img/example_logo.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico')}}" type="image/x-icon">
 </head>
 <body>
     <header class="header">
         <div id="header-left">
             <a href="{{ url_for('Homepage.home') }}">
-                <img src="{{ url_for('static', filename='img/example_logo.png') }}" alt="Matematicando Logo">
+                <img src="{{ url_for('static', filename='img/favicon.ico') }}" alt="Matematicando Logo">
             </a>
             <h1>Matematicando</h1>
         </div>
@@ -168,7 +168,7 @@
 
         <section id="extra-content">
             <div id="content">
-                <img src="../static/img/main-background-materials/triad.png" alt="Science Triad">
+                <img src="{{ url_for('static', filename='img/materials/materials-lv1/triad.png') }}" alt="Science Triad">
                 <div id="right">
                     <p>Esta é a seção de materiais/conteúdos que serão publicados pelos respectivos professores de cada 
                     matéria e série. Para acessar os materiais específicos, não há nenhum mistério, bastando apenas 

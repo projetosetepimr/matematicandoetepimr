@@ -25,15 +25,15 @@
 }
 
 .main section#main-background.math {
-    background-image: url("../img/main-background-materials/materials-lv2/math-background.jpg");
+    background-image: url("../img/materials/materials-lv2/main-background/math-background.jpg");
 }
 
 .main section#main-background.physics {
-    background-image: url("../img/main-background-materials/materials-lv2/physics-background.jpg");
+    background-image: url("../img/materials/materials-lv2/main-background/physics-background.jpg");
 }
 
 .main section#main-background.chemistry {
-    background-image: url("../img/main-background-materials/materials-lv2/chemistry-background.jpg");
+    background-image: url("../img/materials/materials-lv2/main-background/chemistry-background.jpg");
 }
 
 .main section#main-background h1 {

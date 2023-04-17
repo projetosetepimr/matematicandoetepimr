@@ -9,7 +9,7 @@
 }
 
 .main section#main-background {
-    background-image: url("../img/main-background/main-background-desktop.jpg");
+    background-image: url("../img/home/main-background/main-background_desktop.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -338,7 +338,7 @@ div {
 
     min-height: 30em;
     position: relative;
-    background-image: url("../img/etepimr-slider/1.jpg");
+    background-image: url("../img/home/etepimr-slider/1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

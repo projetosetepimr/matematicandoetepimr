@@ -1,7 +1,7 @@
 const slider = document.getElementById("image-output")
 const slideList = document.getElementById("slide-wrap")
 const indicesList = document.querySelectorAll("div.index")
-const baseDir = "/static/img/main-slider"
+const baseDir = "/static/img/home/main-slider"
 const breakpointWidth = 1100
 const maxCount = 32
 
@@ -26,6 +26,7 @@ function setup() {
         img.src = `${finalDir}/${i+1}.jpg`
         img.alt = `${i+1} Image`
         img.width = sliderWidth
+
         li.appendChild(img)
         slideList.appendChild(li)
     }

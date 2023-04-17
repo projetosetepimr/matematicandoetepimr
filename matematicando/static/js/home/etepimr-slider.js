@@ -3,7 +3,7 @@ const arrowLeft = document.getElementById("arrow-left")
 const arrowRight = document.getElementById("arrow-right")
 const indexOutput = document.getElementById("index-output")
 const colorOutputLine = document.getElementById("color-output-line")
-const eteImgDir = "/static/img/etepimr-slider"
+const eteImgDir = "/static/img/home/etepimr-slider"
 const maxImages = 32
 let currentIndex = 0
 
@@ -33,7 +33,9 @@ let eteslide = function(increment) {
     }
     
     let updateLineColor = function() {
-        colorOutputLine.style.backgroundColor = colorList[Math.floor(Math.random() * colorList.length)]
+        colorOutputLine.style.backgroundColor = colorList[
+            Math.floor(Math.random() * colorList.length)
+        ]
     }
 
     currentIndex += increment

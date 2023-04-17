@@ -17,5 +17,8 @@
 - [x] Materials Page
   - [x] Materials Level 1
   - [x] Materials Level 2
+  - [x] Dir Organization
+  - [x] Active Header Items
+  - [x] Div Content
   - [ ] Materials Logic
 - [ ] Tools Page

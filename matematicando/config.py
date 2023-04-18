@@ -1,0 +1,15 @@
+from os import getcwd, getenv
+
+from dotenv import load_dotenv
+
+load_dotenv(dotenv_path=getcwd()+"/../.env")
+
+GDRIVE_PRIVATE_KEY = getenv("GDRIVE_PRIVATE_KEY")
+GDRIVE_PRIVATE_KEY_ID = getenv("GDRIVE_PRIVATE_KEY_ID")
+GDRIVE_CLIENT_ID = getenv("GDRIVE_CLIENT_ID")
+GDRIVE_CLIENT_EMAIL = getenv("GDRIVE_CLIENT_EMAIL")
+GDRIVE_TOKEN_URI = getenv("GDRIVE_TOKEN_URI")
+
+GDRIVE_MATH_DIR_ID = getenv("GDRIVE_MATH_DIR_ID")
+GDRIVE_PHYSICS_DIR_ID = getenv("GDRIVE_PHYSICS_DIR_ID")
+GDRIVE_CHEMISTRY_DIR_ID = getenv("GDRIVE_CHEMISTRY_DIR_ID")

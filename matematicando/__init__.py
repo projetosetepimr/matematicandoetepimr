@@ -2,7 +2,7 @@ from flask import Flask, render_template
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 
-from .views import contacts_bp, home_bp, materials_bp
+from .routes import api_bp, contacts_bp, home_bp, materials_bp
 
 
 def page_not_found(e):
@@ -13,6 +13,7 @@ def register_blueprints(app):
     app.register_blueprint(home_bp.home_bp, url_prefix="/")
     app.register_blueprint(contacts_bp.contacts_bp, url_prefix="/contatos")
     app.register_blueprint(materials_bp.materials_bp, url_prefix="/materiais")
+    app.register_blueprint(api_bp.api_bp, url_prefix="/api")
 
 
 def config_gdrive_service_instance(app):

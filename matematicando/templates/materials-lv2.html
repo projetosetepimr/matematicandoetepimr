@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/materials-l2.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico')}}" type="image/x-icon">
+
+    <script src="{{ url_for('static', filename='js/materials/materials-page-logic.js') }}" defer></script>
 </head>
 <body>
     <header class="header">
@@ -75,115 +77,30 @@
             </div>
         </section>
 
+        <div id="http-error">
+            <i class="ri-error-warning-line"></i>
+            <p>Erro ao carregar materiais nesta página! Tente novamente recarregando-a.</p>
+        </div>
+
         <h1>I Unidade</h1>
-        <div class="content-block">
-            <div class="content">
-                <div class="content-type-icon-background">
-                    <img src="{{ url_for('static', filename='img/materials/materials-lv2/content-type-icon/pdf.png') }}"
-                     alt="">
-                </div>
-                <div class="content-name">
-                    <p>Atividade de Cone</p>
-                </div>
-                <div class="download-and-content-color">
-                    <div class="download-background"><i class="ri-download-line"></i></div>
-                    <div class="content-type-color" id="homework"></div>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="content-type-icon-background">
-                    <img src="{{ url_for('static', filename='img/materials/materials-lv2/content-type-icon/doc.png') }}"
-                     alt="">
-                </div>
-                <div class="content-name">
-                    <p>Estudo de cone</p>
-                </div>
-                <div class="download-and-content-color">
-                    <div class="download-background"><i class="ri-download-line"></i></div>
-                    <div class="content-type-color" id="supporting-materials"></div>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="content-type-icon-background">
-                    <img src="{{ url_for('static', filename='img/materials/materials-lv2/content-type-icon/pdf.png') }}"
-                     alt="">
-                </div>
-                <div class="content-name">
-                    <p>Atividade de Cone</p>
-                </div>
-                <div class="download-and-content-color">
-                    <div class="download-background"><i class="ri-download-line"></i></div>
-                    <div class="content-type-color" id="homework"></div>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="content-type-icon-background">
-                    <img src="{{ url_for('static', filename='img/materials/materials-lv2/content-type-icon/ppt.png') }}"
-                     alt="">
-                </div>
-                <div class="content-name">
-                    <p>Geometria Analítica</p>
-                </div>
-                <div class="download-and-content-color">
-                    <div class="download-background"><i class="ri-download-line"></i></div>
-                    <div class="content-type-color" id="review"></div>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="content-type-icon-background">
-                    <img src="{{ url_for('static', filename='img/materials/materials-lv2/content-type-icon/pdf.png') }}"
-                     alt="">
-                </div>
-                <div class="content-name">
-                    <p>Introdução à Estatística</p>
-                </div>
-                <div class="download-and-content-color">
-                    <div class="download-background"><i class="ri-download-line"></i></div>
-                    <div class="content-type-color" id="supporting-materials"></div>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="content-type-icon-background">
-                    <img src="{{ url_for('static', filename='img/materials/materials-lv2/content-type-icon/xls.png') }}"
-                     alt="">
-                </div>
-                <div class="content-name">
-                    <p>Fórmulas da Geometria Analítica</p>
-                </div>
-                <div class="download-and-content-color">
-                    <div class="download-background"><i class="ri-download-line"></i></div>
-                    <div class="content-type-color" id="other"></div>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="content-type-icon-background">
-                    <img src="{{ url_for('static', filename='img/materials/materials-lv2/content-type-icon/pdf.png') }}"
-                     alt="">
-                </div>
-                <div class="content-name">
-                    <p>Melhores Canais para Estudar para o ENEM</p>
-                </div>
-                <div class="download-and-content-color">
-                    <div class="download-background"><i class="ri-download-line"></i></div>
-                    <div class="content-type-color" id="other"></div>
-                </div>
-            </div>
+        <div class="content-block" id="I-unidade">
+            <div class="loading"></div>
         </div>
 
         <h1>II Unidade</h1>
-        <div class="content-block"></div>
+        <div class="content-block" id="II-unidade">
+            <div class="loading"></div>
+        </div>
 
         <h1>III Unidade</h1>
-        <div class="content-block"></div>
+        <div class="content-block" id="III-unidade">
+            <div class="loading"></div>
+        </div>
 
         <h1>IV Unidade</h1>
-        <div class="content-block"></div>
+        <div class="content-block" id="IV-unidade">
+            <div class="loading"></div>
+        </div>
     </main>
 
     <footer class="footer">
@@ -193,6 +110,11 @@
     <script>
         function redirectTo(url) {
             window.location.href = url
+            console.log(url)
+        }
+
+        function newTabRedirectTo(url) {
+            window.open(url, "_blank")
         }
     </script>
 </body>

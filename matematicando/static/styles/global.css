@@ -57,7 +57,7 @@ body {
     height: 57px;
     background-color: var(--header-background);
     border-bottom: 1px solid rgba(0, 0, 0, 0.324);
-    padding: 20px 25px;
+    padding: 20px 30px;
     box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.113);
 
     display: flex;
@@ -117,31 +117,33 @@ body {
 .header > div#header-left {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .header > div#header-left > h1 {
-    color: var(--color5);
-    font: 1.10rem var(--title-font);
-    font-weight: 700;
+    color: var(--color4);
+    font: 1.1rem var(--secondary-font);
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     cursor: pointer;
 }
 
-.header > div#header-left > h1:hover {
-    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.133);
+.header > div#header-left div#line {
+    background-color: var(--color5);
+    width: 6px;
+    height: 3px;
 }
 
 .header > div#header-left a {
     display: block;
-    width: 38px;
-    height: 38px;
+    width: 35px;
+    height: 35px;
 }
 
 .header > div#header-left img {
-    width: 38px;
-    height: 38px;
+    width: 35px;
+    height: 35px;
     cursor: pointer;
 }
 

@@ -20,5 +20,6 @@
   - [x] Dir Organization
   - [x] Active Header Items
   - [x] Div Content
-  - [ ] Materials Logic
+  - [x] Materials Logic
+  - [ ] Project Logo
 - [ ] Tools Page

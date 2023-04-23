@@ -2,7 +2,7 @@ from os import getcwd, getenv
 
 from dotenv import load_dotenv
 
-load_dotenv(dotenv_path=getcwd()+"/../.env")
+load_dotenv()
 
 GDRIVE_PRIVATE_KEY = getenv("GDRIVE_PRIVATE_KEY")
 GDRIVE_PRIVATE_KEY_ID = getenv("GDRIVE_PRIVATE_KEY_ID")

@@ -162,5 +162,8 @@ def download():
             content_type=file.get("mimeType")
         )
 
-    except HttpError:
-        return None
+    except HttpError as error:
+        if error.status_code == 404:
+            return jsonify({"error": "404 Not Found"}), 404
+        else:
+            return jsonify({"error": "500 Internal Server Error"}), 500

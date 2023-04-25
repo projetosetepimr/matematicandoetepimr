@@ -77,6 +77,10 @@ body {
     position: relative;
 }
 
+.header ul hr {
+    display: none;
+}
+
 .header ul > li::after {
     content: "";
     position: absolute;
@@ -120,7 +124,7 @@ body {
     gap: 20px;
 }
 
-.header > div#header-left > h1 {
+.header h1 {
     color: var(--color4);
     font: 1.2rem var(--title-font);
     border-bottom: 3px solid #39455b97;
@@ -129,6 +133,14 @@ body {
     text-transform: uppercase;
     letter-spacing: 4px;
     cursor: pointer;
+}
+
+.header h1#mobile {
+    display: none;
+}
+
+.header div#divmenu {
+    display: none;
 }
 
 .header > div#header-left div#line {
@@ -149,6 +161,90 @@ body {
     cursor: pointer;
 }
 
+@media screen and (max-width: 850px) {
+    .header h1#desktop {
+        display: none;
+    }
+
+    .header h1#mobile {
+        display: block;
+        border-bottom-width: 2px;
+        letter-spacing: 3px;
+        border-radius: 3px;
+        font-weight: 900;
+        font-size: 1.2rem;
+    }
+
+    .header ul#navlist {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 1000;
+        background-color: var(--color5);
+        box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.212) inset;
+        transform: translateY(-120%);
+        position: absolute;
+        top: 7vh;
+        left: 0;
+        width: 100%;
+        height: 70vh;
+        transition: transform .5s ease-in-out;
+    }
+
+    .header ul#navlist.active {
+        transform: translateY(0);
+    }
+
+    .header ul#navlist i {
+        color: rgb(239, 239, 239);
+    }
+
+    .header ul#navlist a {
+        color: rgb(228, 226, 226);
+    }
+
+    .header ul#navlist li {
+        opacity: 0;
+    }
+
+    .header ul hr {
+        display: block;
+        border: 1px solid rgba(189, 189, 189, 0.231);
+        width: 40%;
+    }
+
+    .header ul hr#center {
+        width: 55%;
+    }
+
+    .header div#divmenu {
+        /* background-color: rgb(227, 225, 225); */
+        border-radius: 5px;
+        padding: 3px 6px;
+        display: block;
+    }
+    
+    .header div#divmenu > i {
+        font-size: 1.8rem;
+        color: var(--color4);
+    }
+
+    @keyframes linkFade {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+
+/* FOOTER */
 
 .footer {
     background-color: var(--footer-background);
@@ -173,4 +269,14 @@ body {
     text-decoration: underline;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.92);
+}
+
+@media screen and (max-width: 850px) {
+    .footer {
+        justify-content: center;
+    }
+
+    .footer p {
+        font-size: 0.85rem;
+    }
 }

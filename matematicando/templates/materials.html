@@ -11,6 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico')}}" type="image/png" 
     sizes="16x16">
+
+    <script src="{{ url_for('static', filename='js/home/responsive-header.js') }}" defer></script>
 </head>
 <body>
     <header class="header">
@@ -18,29 +20,36 @@
             <a href="{{ url_for('Homepage.home') }}">
                 <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Matematicando Logo">
             </a>
-            <h1>Matematicando</h1>
+            <h1 id="desktop">Matematicando</h1>
         </div>
+       
+        <h1 id="mobile">Matematicando</h1>
 
-        <nav>
-            <ul id="navlist">
-                <li>
-                    <i class="ri-home-4-line" onclick="redirectTo('/')"></i>
-                    <a href="{{ url_for('Homepage.home') }}">Home</a>
-                </li>
-                <li class="active">
-                    <i class="ri-book-2-line" onclick="redirectTo('/materiais')"></i>
-                    <a href="{{ url_for('Materials.materials') }}">Materiais</a>
-                </li>
-                <li>
-                    <i class="ri-tools-fill" onclick="redirectTo('/ferramentas')"></i>
-                    <a href="{{ url_for('Tools.tools') }}">Ferramentas</a>
-                </li>
-                <li>
-                    <i class="ri-mail-line" onclick="redirectTo('/contatos')"></i>
-                    <a href="{{ url_for('Contacts.contacts') }}">Contatos</a>
-                </li>
-            </ul>
-        </nav>
+        <ul id="navlist">
+            <li>
+                <i class="ri-home-4-line" onclick="redirectTo('/')"></i>
+                <a href="{{ url_for('Homepage.home') }}">Home</a>
+            </li>
+            <hr>
+            <li class="active">
+                <i class="ri-book-2-line" onclick="redirectTo('/materiais')"></i>
+                <a href="{{ url_for('Materials.materials') }}">Materiais</a>
+            </li>
+            <hr id="center">
+            <li>
+                <i class="ri-tools-fill" onclick="redirectTo('/ferramentas')"></i>
+                <a href="{{ url_for('Tools.tools') }}">Ferramentas</a>
+            </li>
+            <hr>
+            <li>
+                <i class="ri-mail-line" onclick="redirectTo('/contatos')"></i>
+                <a href="{{ url_for('Contacts.contacts') }}">Contatos</a>
+            </li>
+        </ul>
+
+        <div id="divmenu">
+            <i id="menu" class="ri-menu-line"></i>
+        </div>
     </header>
 
     <main class="main">

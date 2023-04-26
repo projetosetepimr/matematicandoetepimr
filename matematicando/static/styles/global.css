@@ -269,6 +269,7 @@ body {
 
     @media screen and (max-height: 600px) and (orientation: landscape) {
         .header ul#navlist {
+            padding: 1rem;
             height: 95vh;
             justify-content: none;
             gap: 1.3rem;

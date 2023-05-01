@@ -568,8 +568,8 @@ div {
     }
 
     .main section#main-slider {
-        width: 92vw;
-        height: 50vh;
+        width: 94vw;
+        height: 52vh;
     }
 
     @media screen and (max-width: 450px), screen and (min-height: 750px), 
@@ -676,11 +676,104 @@ div {
             height: max-content;
         }
     }
+
+    @media screen and (min-width: 650px) {
+        .main section#main-slider {
+            height: 65vh;
+        }
+
+        .main section#main-apresentation div#phrase-box {
+            padding: 0px 40px;
+            padding-top: 20px;
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+        .main section#main-slider div#indices {
+            gap: 10px;
+        }
+        
+        .main section#main-slider div#indices > div.index {
+            width: 7px;
+            height: 7px;
+        }
+
+        @media screen and (max-width: 650px) {
+            .main section#main-slider {
+                gap: 10px;
+            }
+
+            .main section#main-slider div#indices > div.index {
+                width: 6px;
+                height: 6px;
+            }
+
+            .main section#main-slider div#indices {
+                gap: 8px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .main section#main-slider {
+                gap: 10px;
+            }
+
+            .main section#main-slider div#indices > div.index {
+                width: 5px;
+                height: 5px;
+            }
+
+            .main section#main-slider div#indices {
+                padding: 0px 10px;
+                gap: 7px;
+            }
+        }
+
+        @media screen and (max-width: 400px)  {
+            .main section#main-slider {
+                gap: 10px;
+            }
+
+            .main section#main-slider div#indices > div.index {
+                width: 4px;
+                height: 4px;
+            }
+
+            .main section#main-slider div#indices {
+                padding: 0px 10px;
+                gap: 5px;
+            }
+
+            .main section#main-slider div#image-output {
+                height: 90%;
+            }
+        }
+
+        @media screen and (max-width: 300px) {
+            .main section#main-slider {
+                gap: 10px;
+            }
+
+            .main section#main-slider div#indices > div.index {
+                width: 4px;
+                height: 4px;
+            }
+
+            .main section#main-slider div#indices {
+                padding: 0px 10px;
+                gap: 4px;
+            }
+
+            .main section#main-slider div#image-output {
+                height: 90%;
+            }
+        }
+    }
 }
 
 @media screen and (min-height: 767px) {
     .main section#main-background {
-        height: 55vh;
+        height: 65vh;
         display: flex;
         align-items: center;
     }
@@ -703,5 +796,17 @@ div {
     .main section#main-apresentation div#phrase-box {
         height: max-content;
         margin: 5px 0px;
+    }
+
+    @media screen and (min-height: 1400px) {
+        .main section#main-slider div#indices > div.index {
+            width: 15px;
+            height: 15px;
+        }
+    
+        .main section#main-slider div#indices {
+            background-color: blue;
+            gap: 15px;
+        }
     }
 }

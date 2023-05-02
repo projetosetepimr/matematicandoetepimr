@@ -572,6 +572,27 @@ div {
         height: 52vh;
     }
 
+    .main section#project-info {
+        width: 95vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main section#project-info h1 {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+        margin-top: 30px;
+    }
+    
+    .main section#project-info p {
+        font-size: 1rem;
+        letter-spacing: 2px;
+        text-align: justify;
+        text-indent: 20px;
+    }
+
     @media screen and (max-width: 450px), screen and (min-height: 750px), 
     screen and (max-width: 350px) {
 
@@ -698,6 +719,22 @@ div {
             height: 7px;
         }
 
+        .main section#project-info { 
+            margin-top: 20px;
+        }
+
+        .main section#project-info h1 {
+            font-size: 1.6rem;
+            line-height: 30px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .main section#project-info p {
+            font-size: 1rem;
+            margin: 0px 5px;
+        }
+
         @media screen and (max-width: 650px) {
             .main section#main-slider {
                 gap: 10px;
@@ -727,6 +764,10 @@ div {
                 padding: 0px 10px;
                 gap: 7px;
             }
+
+            .main section#project-info p { 
+                font-size: 0.9rem;
+            }
         }
 
         @media screen and (max-width: 400px)  {
@@ -746,6 +787,10 @@ div {
 
             .main section#main-slider div#image-output {
                 height: 90%;
+            }
+
+            .main section#project-info h1 {
+                font-size: 1.3rem;
             }
         }
 

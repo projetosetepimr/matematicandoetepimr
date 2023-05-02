@@ -29,7 +29,7 @@
     --citation-font: "Poppins", sans-serif;
     --footer-font: "Schibsted Grotesk", sans-serif;
 
-    --header-background: #f4f1f1;
+    --header-background: #f0f0f0;
     --body-color: #EDEDED;
     --footer-background: #0f1118;
     --default-index-color: rgba(255, 255, 255, 0.733);
@@ -317,9 +317,16 @@ body {
 @media screen and (max-width: 850px) {
     .footer {
         justify-content: center;
+        padding: 0px;
     }
 
     .footer p {
         font-size: 0.7rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        .footer p {
+            font-size: 0.6rem;
+        }
     }
 }

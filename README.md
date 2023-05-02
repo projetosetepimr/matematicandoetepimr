@@ -5,6 +5,7 @@
 ## TODO
 
 - [x] Initial Config
+
 - [x] Homepage
   - [x] Header
   - [x] Header Info
@@ -14,6 +15,7 @@
   - [x] Footer
   - [x] Refactoring
 - [x] Contacts Page
+
 - [x] Materials Page
   - [x] Materials Level 1
   - [x] Materials Level 2
@@ -21,5 +23,9 @@
   - [x] Active Header Items
   - [x] Div Content
   - [x] Materials Logic
-  - [ ] Project Logo
-- [ ] Tools Page
+  - [x] Project Logo
+
+- [x] Tools Page
+  - [x] Coming Soon
+
+- [ ] Responsiveness

@@ -91,3 +91,67 @@
     font-weight: 600;
     letter-spacing: 3px;
 }
+
+@media screen and (max-width: 850px) {
+    .main section#contacts-box {
+        width: 95vw;
+    }
+
+    .main section#contacts-box div#text p {
+        font-size: 1rem;
+    }
+
+    .main h1 {
+        font-size: 2.3rem;
+        margin-top: 30px;
+    }
+
+    .main section#contacts-box div#contacts-list > div.contact {
+        height: 60px;
+    }
+
+    .main section#contacts-box div#contacts-list > div.contact > i {
+        font-size: 1.6rem;
+    }
+    
+    .main section#contacts-box div#contacts-list > div.contact > p {
+        font-size: 1.35rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        .main h1 {
+            font-size: 2.15rem;
+            margin-top: 40px;
+        }
+
+        .main section#contacts-box div#text {
+            padding: 10px;
+        }
+
+        .main section#contacts-box div#contacts-list > div.contact {
+            height: 50px;
+        }
+
+        .main section#contacts-box div#contacts-list > div.contact > i {
+            font-size: 1.35rem;
+        }
+        
+        .main section#contacts-box div#contacts-list > div.contact > p {
+            font-size: 1.15rem;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .main h1 {
+            font-size: 2rem;
+        }
+
+        .main section#contacts-box div#text p {
+            font-size: 0.9rem;
+        }
+
+        .main section#contacts-box div#text {
+            padding: 5px;
+        }
+    }
+}

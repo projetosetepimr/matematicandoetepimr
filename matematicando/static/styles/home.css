@@ -312,15 +312,6 @@ div {
     letter-spacing: 3px;
 }
 
-.main section#ete-slider-box div#color-output-line {
-    background-color: rgb(151, 212, 105);
-    transition: all 2s;
-    border-radius: 10px;
-    margin-top: 10px;
-    width: 40%;
-    height: 5px;
-}
-
 .main section#ete-slider-box div#slide-group {
     width: 90vw;
     height: 75vh;
@@ -333,14 +324,14 @@ div {
 }
 
 .main section#ete-slider-box div#ete-slider {
-    margin-top: 50px;
+    margin-top: 10px;
     border-radius: 10px;
     background-color: black;
     box-shadow: 2px -10px 20px rgba(0, 0, 0, 0.322);
     width: 80%;
     height: 100%;
 
-    min-height: 30em;
+    min-height: 450px;
     position: relative;
     background-image: url("../img/home/etepimr-slider/1.jpg");
     background-repeat: no-repeat;
@@ -371,6 +362,10 @@ div {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.main section#ete-slider-box div#slide-group div.mobile-arrow {
+    display: none;
 }
 
 .main section#ete-slider-box div#slide-group div.arrow:hover {
@@ -409,20 +404,36 @@ div {
     align-items: center;
 }
 
-.main section#ete-slider-box p#share-pictures-with-us > i {
-    margin-right: 12px;
+.main section#ete-slider-box div#share-with-us {
+    background-color: #12151d;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main section#ete-slider-box div#share-with-us i {
     font-size: 1.6rem;
     color: rgb(207, 109, 74);
 }
 
-.main section#ete-slider-box p#share-pictures-with-us > a {
+.main section#ete-slider-box div#share-with-us p {
+    font: 0.9rem var(--text-font);
+    color: white;
+    letter-spacing: 2px;
+}
+
+.main section#ete-slider-box div#share-with-us a {
     font-weight: 500;
-    margin-left: 5px;
     text-decoration: none;
     color: var(--link-color);
 }
 
-.main section#ete-slider-box p#share-pictures-with-us > a:hover {
+.main section#ete-slider-box div#share-with-us a:hover {
     text-decoration: underline;
 }
 
@@ -593,6 +604,104 @@ div {
         text-indent: 20px;
     }
 
+    .main div#division-line {
+        margin-top: 50px;
+        height: 40px;
+    }
+    
+    .main section#ete-slider-box {
+        margin-top: 50px;
+        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.061);
+        padding: 20px 0px;
+    }
+    
+    .main section#ete-slider-box h1 {
+        font: 1.8rem var(--title-font);
+        letter-spacing: 2px;
+    }
+    
+    .main section#ete-slider-box div#slide-group {
+        width: 100%;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .main section#ete-slider-box div#ete-slider {
+        box-shadow: 2px -10px 20px rgba(0, 0, 0, 0.322);
+        box-shadow: 0px -20px 30px 10px rgba(0, 0, 0, 0.389) inset;
+        background-color: black;
+        padding: 0px 5px;
+        border-radius: 0px;
+        width: 100%;
+    
+        background-image: url("../img/home/etepimr-slider/1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .main section#ete-slider-box div#ete-slider > div#inner-shadow {
+        display: none;
+    }
+    
+    .main section#ete-slider-box div#slide-group div.arrow {
+        box-shadow: none;
+        background-color: transparent;
+        border-radius: 50%;
+        cursor: pointer;
+        width: 55px;
+        height: 55px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main section#ete-slider-box div#slide-group div.arrow:hover {
+        background-color: #11141c96;
+        transform: scale(1.1);
+        transition: all .5s;
+    }
+
+    .main section#ete-slider-box div#slide-group div.arrow > i {
+        text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.886);
+        font-size: 2.2rem;
+    }
+
+    .main section#ete-slider-box div#slide-group div.desktop-arrow {
+        display: none;
+    }
+    
+    .main section#ete-slider-box div#slide-group div.mobile-arrow {
+        display: flex;
+    }
+    
+    .main section#ete-slider-box p#index-output {
+        font: 0.9rem var(--materials-name-font);
+        padding: 10px 100px;
+    }
+
+    .main section#ete-slider-box div#share-with-us {
+        background-color: #12151d;
+        border-radius: 10px;
+        margin-top: 30px;
+        padding: 15px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
     @media screen and (max-width: 450px), screen and (min-height: 750px), 
     screen and (max-width: 350px) {
 
@@ -679,13 +788,6 @@ div {
         }
     }
 
-    @media screen and (max-width: 850px) and (orientation: landscape) {
-        .main section#main-apresentation div#explore-box {
-            margin-top: 30px;
-            margin-bottom: 50px;
-        }
-    }
-
     @media screen and (min-height: 850px) {
         .main section#main-background {
             display: flex;
@@ -706,6 +808,34 @@ div {
         .main section#main-apresentation div#phrase-box {
             padding: 0px 40px;
             padding-top: 20px;
+        }
+    }
+
+    @media screen and (max-width: 850px) and (orientation: landscape) {
+        .main section#main-apresentation div#explore-box {
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+
+        .main section#main-slider {
+            height: 90vh;
+        }
+
+        .main section#main-slider div#indices {
+            gap: 8px;
+        }
+
+        .main section#main-slider div#indices > div.index {
+            width: 6px;
+            height: 6px;
+        }
+
+        .main section#ete-slider-box p#index-output {
+            margin-top: 9rem;
+        }
+
+        .main section#ete-slider-box h1 {
+            margin-bottom: 4rem;
         }
     }
 
@@ -735,6 +865,11 @@ div {
             margin: 0px 5px;
         }
 
+        .main section#ete-slider-box div#share-with-us p {
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
         @media screen and (max-width: 650px) {
             .main section#main-slider {
                 gap: 10px;
@@ -747,6 +882,20 @@ div {
 
             .main section#main-slider div#indices {
                 gap: 8px;
+            }
+
+            .main section#ete-slider-box div#share-with-us {
+                flex-direction: column;
+                border-radius: 0px;
+            }
+
+            .main section#ete-slider-box div#slide-group {
+                margin: 0px;
+            }
+
+            .main section#ete-slider-box h1 {
+                margin-bottom: 20px;
+                font-size: 1.7rem;
             }
         }
 
@@ -767,6 +916,14 @@ div {
 
             .main section#project-info p { 
                 font-size: 0.9rem;
+            }
+
+            .main section#ete-slider-box div#slide-group {
+                height: 50%;
+            }
+
+            .main section#ete-slider-box h1 {
+                font-size: 1.5rem;
             }
         }
 
@@ -789,8 +946,13 @@ div {
                 height: 90%;
             }
 
-            .main section#project-info h1 {
-                font-size: 1.3rem;
+            .main section#ete-slider-box div#ete-slider {
+                min-height: 350px;
+            }
+
+            .main section#ete-slider-box h1 {
+                text-align: center;
+                font-size: 1.45rem;
             }
         }
 
@@ -811,6 +973,10 @@ div {
 
             .main section#main-slider div#image-output {
                 height: 90%;
+            }
+
+            .main section#ete-slider-box h1 {
+                text-align: center;
             }
         }
     }

@@ -12,13 +12,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 10rem;
     width: 100%;
     height: 70vh;
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 
     border-top: 2px solid rgba(0, 0, 0, 0.141);
@@ -55,10 +54,11 @@
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.205);
     border-radius: 10px;
     padding: 10px;
-    width: 90vw;
+    width: 95vw;
     height: 80vh;
+    min-height: 500px;
 
-    transform: translateY(-100px);
+    transform: translateY(-90px);
     border: 1px solid #ededed50;
 }
 
@@ -104,7 +104,7 @@
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.161);
     border-radius: 15px;
     padding: 20px;
-    width: 90vw;
+    width: 91vw;
 
     display: flex;
     flex-direction: column;
@@ -180,6 +180,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .main section#subjects div.subject-block div.links-to-grades > div.grade-block > div.intern-header h1 {
     font: 2rem var(--secondary-font);
     color: white;
@@ -244,6 +245,7 @@
 .main section#extra-content div#right {
     width: 50%;
     height: 100%;
+    margin-right: 50px;
 
     display: flex;
     flex-direction: column;
@@ -278,5 +280,164 @@
 
     100% {
         transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .main section#main-background {
+        height: 65vh;
+    }
+
+    .main section#main-background div#heading {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .main section#main-background div#heading h1 {
+        font-size: 3rem;
+    }
+
+    .main section#main-background div#heading div#heading-line {
+        width: 55%;
+        height: 5.5px;
+    }
+
+    .main section#extra-content {
+        height: max-content;
+    }
+
+    .main section#extra-content div#content {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .main section#extra-content div#right {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .main section#extra-content div#right p {
+        font-size: 1.1rem;
+        margin: 10px 20px;
+    }
+
+    .main section#extra-content div#content img {
+        margin-top: 90px;
+    }
+
+    .main section#extra-content div#line {
+        margin: 25px 0px;
+    }
+
+    @media screen and (max-width: 800px) {
+        .main section#main-background div#heading h1 {
+            font-size: 2.8em;
+        }
+
+        .main section#main-background div#heading div#heading-line {
+            width: 60%;
+            height: 5px;
+        }
+
+        .main section#subjects div.subject-block {
+            width: 97vw;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .main section#main-background div#heading {
+            margin-top: 90px;
+        }
+
+        .main section#main-background div#heading div#heading-line {
+            width: 80%;
+            height: 4px;
+        }
+
+        .main section#main-background div#heading h1 {
+            font-size: 2.3rem;
+        }
+
+        .main section#subjects div.subject-name {
+            height: 110px;
+        }
+
+        .main section#subjects div.subject-name h1 {
+            font-size: 2.3rem;
+        }
+
+        .main section#subjects div.subject-block div.links-to-grades {
+            flex-direction: column;
+            height: max-content;
+        }
+
+        .main section#subjects div.subject-block div.links-to-grades > 
+        div.grade-block > div.icon i {
+            font-size: 9rem;
+        }
+
+        .main section#subjects div.subject-block div.subject-description p {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .main section#main-background div#heading h1 {
+            font-size: 1.8rem;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .main section#main-background div#heading {
+            margin-top: 100px;
+        }
+
+        .main section#main-background div#heading h1 {
+            font-size: 1.5rem;
+        }
+
+        .main section#subjects div.subject-block div.subject-description {
+            padding: 10px;
+        }
+
+        .main section#subjects div.subject-block div.subject-description p {
+            font-size: 1rem;
+        }
+
+        .main section#subjects div.subject-block div.links-to-grades > 
+        div.grade-block > div.intern-header h1 {
+            font-size: 1.7rem;
+        }
+
+        .main section#subjects div.subject-name h1 {
+            font-size: 1.9rem;
+        }
+
+        .main section#extra-content div#content img {
+            width: 320px;
+            height: 220px;
+        }
+
+        .main section#extra-content div#right p {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (min-height: 500px) {
+    .main section#main-background {
+        height: 70vh;
+    }
+
+    @media screen and (min-height: 700px) {
+        .main section#main-background {
+            height: 60vh;
+        }
+    }
+
+    @media screen and (min-height: 900px) {
+        .main section#main-background {
+            height: 55vh;
+        }
     }
 }

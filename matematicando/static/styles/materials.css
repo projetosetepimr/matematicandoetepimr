@@ -49,19 +49,6 @@
     height: 6px;
 }
 
-.main section#image-grid {
-    background-color: var(--color5);
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.205);
-    border-radius: 10px;
-    padding: 10px;
-    width: 95vw;
-    height: 80vh;
-    min-height: 500px;
-
-    transform: translateY(-90px);
-    border: 1px solid #ededed50;
-}
-
 .main section#subjects {
     width: 100%;
 

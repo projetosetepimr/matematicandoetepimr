@@ -12,6 +12,7 @@ gunicorn = "^20.1.0"
 python-dotenv = "^1.0.0"
 google-api-python-client = "^2.85.0"
 google = "^3.0.0"
+pip = "^23.1.2"
 
 
 [tool.poetry.group.test.dependencies]

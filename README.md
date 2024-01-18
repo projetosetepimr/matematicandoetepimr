@@ -28,4 +28,4 @@
 - [x] Tools Page
   - [x] Coming Soon
 
-- [ ] Responsiveness
+- [x] Responsiveness
